@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bes2qlvyb5l67"]
+
+[ext_resource type="Script" uid="uid://2i1jg7cxejbv" path="res://number_gain.gd" id="1_4ceby"]
+
+[node name="numberGain" type="Label" unique_id=1588158097]
+theme_override_font_sizes/font_size = 48
+text = "+1000"
+script = ExtResource("1_4ceby")
