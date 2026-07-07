@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpfdo8fi0xf3x" path="res://scenes/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b75bcblikkj5o" path="res://scenes/number_roller.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://ckow3c6glwaaw" path="res://scenes/shop_system.tscn" id="3_sugp2"]
 
 [node name="main" type="Node2D" unique_id=219049157]
 script = ExtResource("1_0wfyh")
@@ -24,5 +25,14 @@ offset_right = 1186.0
 offset_bottom = 119.0
 theme_override_font_sizes/font_size = 64
 text = "Total Count: 0"
+
+[node name="totalMult" type="Label" parent="." unique_id=1151724975]
+offset_left = 757.0
+offset_top = 31.0
+offset_right = 1186.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 64
+
+[node name="shopSystem" parent="." unique_id=868133078 instance=ExtResource("3_sugp2")]
 
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
