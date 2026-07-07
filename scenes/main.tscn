@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bfr46acpoy1lv"]
+
+[ext_resource type="Script" uid="uid://cpfdo8fi0xf3x" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://b75bcblikkj5o" path="res://scenes/number_roller.tscn" id="1_o5qli"]
+
+[node name="main" type="Node2D" unique_id=219049157]
+script = ExtResource("1_0wfyh")
+
+[node name="numberRoller" parent="." unique_id=861490069 instance=ExtResource("1_o5qli")]
+position = Vector2(606, 317)
+
+[node name="Button" type="Button" parent="." unique_id=1302480473]
+offset_left = 876.0
+offset_top = 851.0
+offset_right = 1045.0
+offset_bottom = 947.0
+theme_override_font_sizes/font_size = 64
+text = "ROLL"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
