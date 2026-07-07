@@ -29,6 +29,17 @@ theme_override_font_sizes/font_size = 30
 text = "disco light (+0.25)
 25 count"
 
+[node name="discoBalls" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=1324444711]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 111.0
+offset_right = 282.0
+offset_bottom = 209.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "disco ball (+1)
+100 count"
+
 [node name="Cool Stuff" type="TabBar" parent="TabContainer" unique_id=2086909082]
 visible = false
 layout_mode = 2
@@ -48,6 +59,6 @@ offset_bottom = 67.44536
 scale = Vector2(7.927061, 1)
 flat = true
 
-[connection signal="button_up" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_button_up"]
-[connection signal="button_up" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_button_button_up"]
-[connection signal="button_up" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_button_up"]
+[connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_pressed"]
+[connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoBalls" to="." method="_on_disco_balls_pressed"]
+[connection signal="pressed" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_pressed"]
