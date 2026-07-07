@@ -37,4 +37,4 @@ horizontal_alignment = 1
 
 [node name="shopSystem" parent="." unique_id=868133078 instance=ExtResource("3_sugp2")]
 
-[connection signal="button_up" from="rollButton" to="." method="_on_roll_button_button_up"]
+[connection signal="pressed" from="rollButton" to="." method="_on_roll_button_pressed"]

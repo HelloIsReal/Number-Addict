@@ -18,12 +18,23 @@ layout_mode = 2
 mouse_filter = 1
 metadata/_tab_index = 0
 
+[node name="rollSpeed" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=1560047939]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 282.0
+offset_bottom = 110.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "Roll Speed (-0.05s)
+10 count"
+
 [node name="discoLights" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=815950361]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 10.0
+offset_top = 114.0
 offset_right = 282.0
-offset_bottom = 108.0
+offset_bottom = 212.0
 mouse_filter = 1
 theme_override_font_sizes/font_size = 30
 text = "disco light (+0.25)
@@ -32,9 +43,9 @@ text = "disco light (+0.25)
 [node name="discoBalls" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=1324444711]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 111.0
+offset_top = 215.0
 offset_right = 282.0
-offset_bottom = 209.0
+offset_bottom = 313.0
 mouse_filter = 1
 theme_override_font_sizes/font_size = 30
 text = "disco ball (+1)
@@ -45,6 +56,17 @@ visible = false
 layout_mode = 2
 mouse_filter = 1
 metadata/_tab_index = 1
+
+[node name="reload objects" type="Button" parent="TabContainer/Cool Stuff" unique_id=869415180]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 655.0
+offset_right = 282.0
+offset_bottom = 753.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "Reload Objects
+100 count"
 
 [node name="showShopArrow" type="Sprite2D" parent="." unique_id=293898629]
 position = Vector2(369, 452)
@@ -59,6 +81,8 @@ offset_bottom = 67.44536
 scale = Vector2(7.927061, 1)
 flat = true
 
+[connection signal="pressed" from="TabContainer/Multiplier Upgrades/rollSpeed" to="." method="_on_roll_speed_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoBalls" to="." method="_on_disco_balls_pressed"]
+[connection signal="pressed" from="TabContainer/Cool Stuff/reload objects" to="." method="_on_reload_objects_pressed"]
 [connection signal="pressed" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_pressed"]

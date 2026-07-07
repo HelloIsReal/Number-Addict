@@ -5,6 +5,7 @@ var point=2
 var rotationAmount=1
 func _ready():
 	disco_rotate()
+	Global.resetObjects.connect(freeObject)
 
 func _physics_process(delta):
 	hue += delta * speed
@@ -25,3 +26,6 @@ func disco_rotate():
 		tween = get_tree().create_tween()
 		tween.tween_property($".", "rotation_degrees", -70, 6)
 		await tween.finished
+
+func freeObject():
+	queue_free()

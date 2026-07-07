@@ -4,6 +4,8 @@ var hue = 0.0
 var point=2
 var rotationAmount=1
 
+func _ready():
+	Global.resetObjects.connect(freeObject)
 
 func _physics_process(delta):
 	hue += delta * speed
@@ -15,3 +17,5 @@ func _physics_process(delta):
 	$ball.rotation+=1*delta
 	
 	
+func freeObject():
+	queue_free()
