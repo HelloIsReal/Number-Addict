@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://drwkof0ap5g5k"]
+
+[ext_resource type="Texture2D" uid="uid://cyomsgl631bhj" path="res://star-1.png" id="1_bytit"]
+[ext_resource type="Texture2D" uid="uid://sgg5mxfus0w" path="res://star-2.png" id="2_mbvkr"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_3oi7j"]
+frames = 2
+frame_0/texture = ExtResource("1_bytit")
+frame_1/texture = ExtResource("2_mbvkr")
+frame_1/duration = 1.0
+
+[node name="glitter" type="Node2D" unique_id=790568656]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1713124225]
+z_index = -1
+texture_filter = 1
+position = Vector2(948, -75)
+amount = 20
+texture = SubResource("AnimatedTexture_3oi7j")
+lifetime = 2.0
+preprocess = 2.0
+speed_scale = 0.7
+randomness = 0.3
+emission_shape = 3
+emission_rect_extents = Vector2(1000, 1)
+scale_amount_min = 5.0
+scale_amount_max = 10.0

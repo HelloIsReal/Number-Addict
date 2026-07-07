@@ -51,6 +51,17 @@ theme_override_font_sizes/font_size = 30
 text = "disco ball (+1)
 100 count"
 
+[node name="glitter" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=970323093]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 316.0
+offset_right = 282.0
+offset_bottom = 414.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "glitter (+10)
+500 count"
+
 [node name="Cool Stuff" type="TabBar" parent="TabContainer" unique_id=2086909082]
 visible = false
 layout_mode = 2
@@ -84,5 +95,6 @@ flat = true
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/rollSpeed" to="." method="_on_roll_speed_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoBalls" to="." method="_on_disco_balls_pressed"]
+[connection signal="pressed" from="TabContainer/Multiplier Upgrades/glitter" to="." method="_on_glitter_pressed"]
 [connection signal="pressed" from="TabContainer/Cool Stuff/reload objects" to="." method="_on_reload_objects_pressed"]
 [connection signal="pressed" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_pressed"]
