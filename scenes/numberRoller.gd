@@ -15,6 +15,7 @@ func _physics_process(delta):
 
 func roll():
 	if(!rolling):
+		rolling=true
 		for i in range(100):
 			
 			await get_tree().create_timer(0.01).timeout
@@ -27,3 +28,4 @@ func roll():
 		var newNumberGain = numberGain.instantiate()
 		get_tree().current_scene.add_child(newNumberGain)
 		Global.countAdded.emit(rolledNumber)
+		rolling=false

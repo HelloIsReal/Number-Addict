@@ -17,4 +17,12 @@ offset_bottom = 947.0
 theme_override_font_sizes/font_size = 64
 text = "ROLL"
 
+[node name="totalCount" type="Label" parent="." unique_id=1345721117]
+offset_left = 757.0
+offset_top = 31.0
+offset_right = 1186.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 64
+text = "Total Count: 0"
+
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
