@@ -18,6 +18,7 @@ func roll():
 		rolling=true
 		for i in range(100-(Global.rollSpeedReductions*5)):
 			await get_tree().create_timer(0.01).timeout
+			
 			#if(displayNumber==9):
 				#displayNumber=0
 			#else:

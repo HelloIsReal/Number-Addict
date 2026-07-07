@@ -16,6 +16,9 @@ func _physics_process(delta):
 	
 	$ball.rotation+=1*delta
 	
+	if($ball.rotation>=360):
+		$ball.rotation=0
+	print(hue)
 	
 func freeObject():
 	queue_free()
