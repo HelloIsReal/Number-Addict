@@ -13,12 +13,12 @@ offset_right = 300.0
 offset_bottom = 877.0
 current_tab = 0
 
-[node name="Multiplier upgrades" type="TabBar" parent="TabContainer" unique_id=74014885]
+[node name="Multiplier Upgrades" type="TabBar" parent="TabContainer" unique_id=74014885]
 layout_mode = 2
 mouse_filter = 1
 metadata/_tab_index = 0
 
-[node name="discoLights" type="Button" parent="TabContainer/Multiplier upgrades" unique_id=815950361]
+[node name="discoLights" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=815950361]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 10.0
@@ -29,7 +29,7 @@ theme_override_font_sizes/font_size = 30
 text = "disco light (+0.25)
 25 count"
 
-[node name="TabBar" type="TabBar" parent="TabContainer" unique_id=2086909082]
+[node name="Cool Stuff" type="TabBar" parent="TabContainer" unique_id=2086909082]
 visible = false
 layout_mode = 2
 mouse_filter = 1
@@ -48,6 +48,6 @@ offset_bottom = 67.44536
 scale = Vector2(7.927061, 1)
 flat = true
 
-[connection signal="button_up" from="TabContainer/Multiplier upgrades/discoLights" to="." method="_on_disco_lights_button_up"]
-[connection signal="button_up" from="TabContainer/Multiplier upgrades/discoLights" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_button_up"]
+[connection signal="button_up" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_button_up"]

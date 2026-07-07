@@ -23,9 +23,10 @@ func roll():
 				displayNumber=0
 			else:
 				displayNumber+=1
-			rolledNumber = rng.randi_range(1,9)
+			rolledNumber = rng.randi_range(1*Global.currentMult,9*Global.currentMult)
 			displayNumber=rolledNumber
 		var newNumberGain = numberGain.instantiate()
 		get_tree().current_scene.add_child(newNumberGain)
 		Global.countAdded.emit(rolledNumber)
+		Global.totalCount+=rolledNumber
 		rolling=false

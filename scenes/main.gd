@@ -5,14 +5,14 @@ var current
 func _ready():
 	Global.countAdded.connect(updateTotal)
 
-
-func _on_button_button_up():
-	Global.emit_signal("rollNumbers")
-
+func _physics_process(delta):
+	$totalMult.text = "Current multiplier: %sx" % Global.currentMult
+	print()
 
 func updateTotal(num):
 	currentTotal+=num
 	$totalCount.text = "Total Count: %d" % currentTotal
 
-func updateMult():
-	$totalMult.text = "Current multiplier: %dx" % Global.currentMult
+
+func _on_roll_button_button_up():
+	Global.emit_signal("rollNumbers")

@@ -5,11 +5,8 @@ var discoBall=0
 var shopOpen=false
 
 func _physics_process(delta):
-	$"TabContainer/Multiplier upgrades/discoLights".text = "Disco Lights (+0.25)\n%d count" % (25*(discoLights+1))
-
-
-func updateMult():
-	Global.currentMult = discoLights*0.25 + discoBall*2
+	$"TabContainer/Multiplier Upgrades/discoLights".text = "Disco Lights (+0.25)\n%d count" % (25*(discoLights+1))
+	Global.currentMult = 1 + discoLights*0.25 + discoBall*2
 
 func _on_show_show_arrow_button_button_up():
 	if !shopOpen:
@@ -26,5 +23,6 @@ func _on_show_show_arrow_button_button_up():
 
 func _on_disco_lights_button_up():
 	if Global.totalCount >= (25*(discoLights+1)):
+		print("bought disco light!")
 		Global.totalCount -= (25*(discoLights+1))
 		discoLights+=1

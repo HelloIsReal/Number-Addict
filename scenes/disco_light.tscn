@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dyieucpv0fmai"]
+
+[ext_resource type="Texture2D" uid="uid://yoji3krrwugo" path="res://icon.svg" id="1_dsjj2"]
+[ext_resource type="Script" uid="uid://c7e3mvpvpethl" path="res://scenes/disco_light.gd" id="1_yg85i"]
+
+[node name="discoLight" type="Node2D" unique_id=342181333]
+show_behind_parent = true
+rotation = -0.7853982
+script = ExtResource("1_yg85i")
+
+[node name="light" type="Sprite2D" parent="." unique_id=569456656]
+position = Vector2(0, -1593)
+scale = Vector2(0.43999976, 25.000002)
+texture = ExtResource("1_dsjj2")
+
+[node name="Icon2" type="Sprite2D" parent="." unique_id=590987024]
+position = Vector2(0, -53)
+scale = Vector2(0.588421, 0.33984378)
+texture = ExtResource("1_dsjj2")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1468673718]
+scale = Vector2(0.7490623, 0.7890625)
+texture = ExtResource("1_dsjj2")
