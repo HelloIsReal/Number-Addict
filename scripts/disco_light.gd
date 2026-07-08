@@ -11,8 +11,8 @@ func _physics_process(delta):
 	hue += delta * speed
 	hue = fmod(hue,1.0)
 	
-	$light.modulate = Color.from_hsv(hue,1.0,1.0)
-	$light.self_modulate.a = 0.5
+	$DiscolightBox/DiscolightBeam.modulate = Color.from_hsv(hue,1.0,1.0)
+	$DiscolightBox/DiscolightBeam.self_modulate.a = 0.5
 
 
 # There's probably a better way to do this, 
@@ -20,11 +20,11 @@ func _physics_process(delta):
 func disco_rotate(): 
 	while true:
 		var tween = get_tree().create_tween()
-		tween.tween_property($".", "rotation_degrees", 70, 6)
+		tween.tween_property($DiscolightBox, "rotation_degrees", 70, 6)
 		await tween.finished
 		
 		tween = get_tree().create_tween()
-		tween.tween_property($".", "rotation_degrees", -70, 6)
+		tween.tween_property($DiscolightBox, "rotation_degrees", -70, 6)
 		await tween.finished
 
 func freeObject():

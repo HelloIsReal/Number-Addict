@@ -3,9 +3,18 @@
 [ext_resource type="Script" uid="uid://cpfdo8fi0xf3x" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b75bcblikkj5o" path="res://scenes/number_roller.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://ckow3c6glwaaw" path="res://scenes/shop_system.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dyieucpv0fmai" path="res://scenes/disco_light.tscn" id="4_jyhfs"]
 
 [node name="main" type="Node2D" unique_id=219049157]
 script = ExtResource("1_0wfyh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=704235429]
+z_index = -1000
+offset_left = -210.0
+offset_top = -182.0
+offset_right = 2111.0
+offset_bottom = 1226.0
+color = Color(0.038397167, 0.038397167, 0.03839716, 1)
 
 [node name="numberRoller" parent="." unique_id=861490069 instance=ExtResource("1_o5qli")]
 position = Vector2(891, 317)
@@ -36,5 +45,8 @@ text = "Multiplier: "
 horizontal_alignment = 1
 
 [node name="shopSystem" parent="." unique_id=868133078 instance=ExtResource("3_sugp2")]
+
+[node name="discoLight" parent="." unique_id=342181333 instance=ExtResource("4_jyhfs")]
+position = Vector2(1654, 990)
 
 [connection signal="pressed" from="rollButton" to="." method="_on_roll_button_pressed"]

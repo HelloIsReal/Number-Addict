@@ -41,7 +41,7 @@ func _on_disco_lights_pressed():
 		Global.totalCount -= (25*(discoLights+1))
 		discoLights+=1
 		var newDiscoLight = discoLightObject.instantiate()
-		newDiscoLight.position = Vector2(rng.randi_range(150,1700),1080)
+		newDiscoLight.position = Vector2(rng.randi_range(150,1700),990)
 		get_tree().current_scene.add_child(newDiscoLight)
 	updateCosts()
 
