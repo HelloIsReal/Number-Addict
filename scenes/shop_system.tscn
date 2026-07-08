@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://ckow3c6glwaaw"]
 
 [ext_resource type="Script" uid="uid://il5ff53d55eq" path="res://scripts/shop_system.gd" id="1_o2aec"]
-[ext_resource type="Texture2D" uid="uid://yoji3krrwugo" path="res://icon.svg" id="2_eiu10"]
+[ext_resource type="Texture2D" uid="uid://iuxka7x78jgt" path="res://images/shop-2.png" id="2_eiu10"]
 
 [node name="shopSystem" type="Node2D" unique_id=868133078]
+z_index = 100
 position = Vector2(-311, 0)
 script = ExtResource("1_o2aec")
 
@@ -62,6 +63,18 @@ theme_override_font_sizes/font_size = 30
 text = "glitter (+10)
 500 count"
 
+[node name="ultimate upgrade" type="Button" parent="TabContainer/Multiplier Upgrades" unique_id=269522716]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 418.0
+offset_right = 282.0
+offset_bottom = 552.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "ultimate upgrade 
+(+1???)
+100000 count"
+
 [node name="Cool Stuff" type="TabBar" parent="TabContainer" unique_id=2086909082]
 visible = false
 layout_mode = 2
@@ -77,18 +90,18 @@ offset_bottom = 753.0
 mouse_filter = 1
 theme_override_font_sizes/font_size = 30
 text = "Reload Objects
-100 count"
+200 count"
 
-[node name="showShopArrow" type="Sprite2D" parent="." unique_id=293898629]
-position = Vector2(369, 452)
-scale = Vector2(0.265625, 4.7890625)
+[node name="Shop2" type="Sprite2D" parent="." unique_id=1900545276]
+modulate = Color(1, 1, 1, 0.4627451)
+position = Vector2(446, 478)
 texture = ExtResource("2_eiu10")
 
-[node name="showShowArrowButton" type="Button" parent="showShopArrow" unique_id=670228370]
-offset_left = -105.41177
-offset_top = -67.23654
-offset_right = -77.866516
-offset_bottom = 67.44536
+[node name="showShowArrowButton" type="Button" parent="Shop2" unique_id=670228370]
+offset_left = -127.0
+offset_top = -307.0
+offset_right = -98.868515
+offset_bottom = 291.0
 scale = Vector2(7.927061, 1)
 flat = true
 
@@ -96,5 +109,6 @@ flat = true
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoLights" to="." method="_on_disco_lights_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/discoBalls" to="." method="_on_disco_balls_pressed"]
 [connection signal="pressed" from="TabContainer/Multiplier Upgrades/glitter" to="." method="_on_glitter_pressed"]
+[connection signal="pressed" from="TabContainer/Multiplier Upgrades/ultimate upgrade" to="." method="_on_ultimate_upgrade_pressed"]
 [connection signal="pressed" from="TabContainer/Cool Stuff/reload objects" to="." method="_on_reload_objects_pressed"]
-[connection signal="pressed" from="showShopArrow/showShowArrowButton" to="." method="_on_show_show_arrow_button_pressed"]
+[connection signal="pressed" from="Shop2/showShowArrowButton" to="." method="_on_show_show_arrow_button_pressed"]

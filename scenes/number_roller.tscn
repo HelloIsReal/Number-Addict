@@ -6,8 +6,9 @@
 script = ExtResource("1_cn7rw")
 
 [node name="number" type="Label" parent="." unique_id=883575358]
+z_index = 100
 offset_top = 1.0
 offset_right = 10.0
 offset_bottom = 24.0
-theme_override_font_sizes/font_size = 256
+theme_override_font_sizes/font_size = 148
 text = "5"

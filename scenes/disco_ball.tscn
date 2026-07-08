@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://cqwwv7o0jsfil"]
 
-[ext_resource type="Texture2D" uid="uid://yoji3krrwugo" path="res://icon.svg" id="1_3mj5n"]
 [ext_resource type="Script" uid="uid://bmo4x2fonn0ec" path="res://scripts/disco_ball.gd" id="1_smg12"]
+[ext_resource type="Texture2D" uid="uid://cf2sa6x1icgl8" path="res://images/disco ball/discoball_holder.png" id="2_bpunw"]
+[ext_resource type="Texture2D" uid="uid://bl7i1rqfyuut5" path="res://images/disco light/discoball.png" id="3_bpunw"]
 
 [node name="disco_ball" type="Node2D" unique_id=989619424]
 script = ExtResource("1_smg12")
 
 [node name="holder" type="Sprite2D" parent="." unique_id=360701258]
-position = Vector2(0, -170)
-scale = Vector2(0.24000084, 3.7200007)
-texture = ExtResource("1_3mj5n")
+position = Vector2(0, -122.00006)
+scale = Vector2(0.24000084, 0.8337506)
+texture = ExtResource("2_bpunw")
 
 [node name="ball" type="Sprite2D" parent="." unique_id=1241924570]
-position = Vector2(0, 38)
-texture = ExtResource("1_3mj5n")
+position = Vector2(2, 32)
+texture = ExtResource("3_bpunw")
+offset = Vector2(-2, 6)

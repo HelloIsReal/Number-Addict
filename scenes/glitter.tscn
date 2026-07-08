@@ -12,7 +12,7 @@ frame_1/duration = 1.0
 [node name="glitter" type="Node2D" unique_id=790568656]
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1713124225]
-z_index = -1
+z_index = 5
 texture_filter = 1
 position = Vector2(948, -75)
 amount = 20
