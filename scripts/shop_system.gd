@@ -5,6 +5,7 @@ var discoBalls=0
 var shopOpen=true
 var glitter=0
 var hasGlitter=false
+var reloading=false
 var rng = RandomNumberGenerator.new()
 var discoLightObject = preload("res://scenes/disco_light.tscn")
 var discoBallObject = preload("res://scenes/disco_ball.tscn")
@@ -56,7 +57,8 @@ func _on_disco_balls_pressed():
 
 
 func _on_reload_objects_pressed():
-	if Global.totalCount >= 100:
+	if Global.totalCount >= 100 && !reloading:
+		reloading=true
 		print("Bought object reload!")
 		Global.totalCount-= 100
 		Global.resetObjects.emit()
@@ -70,6 +72,7 @@ func _on_reload_objects_pressed():
 			var newDiscoBall = discoBallObject.instantiate()
 			newDiscoBall.position = Vector2(rng.randi_range(150,1800),75)
 			get_tree().current_scene.add_child(newDiscoBall)
+		reloading=false
 	updateCosts()
 
 

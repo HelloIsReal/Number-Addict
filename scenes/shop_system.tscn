@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ckow3c6glwaaw"]
 
-[ext_resource type="Script" uid="uid://il5ff53d55eq" path="res://scenes/shop_system.gd" id="1_o2aec"]
+[ext_resource type="Script" uid="uid://il5ff53d55eq" path="res://scripts/shop_system.gd" id="1_o2aec"]
 [ext_resource type="Texture2D" uid="uid://yoji3krrwugo" path="res://icon.svg" id="2_eiu10"]
 
 [node name="shopSystem" type="Node2D" unique_id=868133078]

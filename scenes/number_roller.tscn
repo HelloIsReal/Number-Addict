@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b75bcblikkj5o"]
 
-[ext_resource type="Script" uid="uid://bb832xgbxfl5q" path="res://scenes/numberRoller.gd" id="1_cn7rw"]
+[ext_resource type="Script" uid="uid://bb832xgbxfl5q" path="res://scripts/numberRoller.gd" id="1_cn7rw"]
 
 [node name="numberRoller" type="Node2D" unique_id=861490069]
 script = ExtResource("1_cn7rw")
