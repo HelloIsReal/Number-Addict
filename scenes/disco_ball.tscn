@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bmo4x2fonn0ec" path="res://scripts/disco_ball.gd" id="1_smg12"]
 [ext_resource type="Texture2D" uid="uid://cf2sa6x1icgl8" path="res://images/disco ball/discoball_holder.png" id="2_bpunw"]
-[ext_resource type="Texture2D" uid="uid://bl7i1rqfyuut5" path="res://images/disco light/discoball.png" id="3_bpunw"]
+[ext_resource type="Texture2D" uid="uid://bl7i1rqfyuut5" path="res://images/disco ball/discoball.png" id="3_bpunw"]
 
 [node name="disco_ball" type="Node2D" unique_id=989619424]
 script = ExtResource("1_smg12")
