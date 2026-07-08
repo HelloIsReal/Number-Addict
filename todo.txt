@@ -1,9 +1,10 @@
 Make art for:
-	- disco light box
-	- disco light beam
-	- disco ball
-	- disco ball string thing (use wood texture or something)
-	- Roll button (like a lever with a red ball top stick thing)
+	- disco light box ✅
+	- disco light beam ✅
+	- disco ball ✅
+	- disco ball string thing (use wood texture or something)✅
+	- Roll button (like a lever with a red ball top stick thing)✅
+	- background ✅
 
 Find sounds for:
 	- Number rolling
